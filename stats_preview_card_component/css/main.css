@@ -36,9 +36,113 @@ body {
 
 .container {
   background-color: var(--card-bg);
-  margin: 20vh;
+  margin: 25vh auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 114rem;
+  border-radius: 10px;
+}
+
+.card {
+  margin-left: 7.2rem;
+}
+
+.card_title {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  font-weight: var(--fw-700);
+  color: var(--color-white);
+  margin-top: 7.1rem;
+  margin-right: 9.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.card_title-accent {
+  color: var(--primary-accent);
+}
+
+.card_title_descrip {
+  color: var(--color-white-1);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-right: 12.45rem;
+  margin-bottom: 7.2rem;
+}
+
+.card_stats ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5.9rem;
+  list-style: none;
+}
+
+.card_stats_stat-1 {
+  margin-right: 6.3rem;
+}
+
+.card_stats_stat-2 {
+  margin-right: 6rem;
+}
+
+.card_stats h3 {
+  font-weight: var(--fw-700);
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: var(--color-white);
+}
+
+.card_stats p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--color-white-2);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.card_right {
+  background-color: var(--primary-accent);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card_image {
+  mix-blend-mode: multiply;
+  height: 100%;
+}
+
+.attribution {
+  color: var(--color-white);
+}
+
+@media (max-width: 1150px) {
+  .container {
+    margin-top: 8.8rem;
+    max-width: 37.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    text-align: center;
+  }
+  .card_title {
+    margin-top: 4rem;
+    margin-bottom: 1.6rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+  .card_image {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
