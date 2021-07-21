@@ -15,8 +15,13 @@
     margin-right: 1.4rem;
   }
 
-  &:focus:not(.btn-custom) {
+  &:hover:not(.btn-custom) {
     background-color: #9fe8df;
+    color: #00474b;
+  }
+
+  &:focus:not(.btn-custom) {
+    background-color: #26c2ae;
     color: #00474b;
   }
 }
@@ -27,7 +32,8 @@
   text-align: right;
   outline: none;
 
-  &:focus {
+  &:focus,
+  &:hover {
     outline-width: 2px;
     outline-style: solid;
     outline-color: #26c2ae;
@@ -72,7 +78,8 @@
       outline: none;
     }
 
-    &-input:focus {
+    &-input:focus,
+    &-input:hover {
       outline-width: 2px;
       outline-style: solid;
       outline-color: #26c2ae;
@@ -108,16 +115,34 @@
     margin: 4rem 4.8rem 4.8rem;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     &-label {
       margin-bottom: 0.6rem;
       color: #5e7a7d;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+
+    &-pericon {
+      position: absolute;
+      margin-left: 1.7rem;
+      top: 4rem;
     }
 
     &-input {
-      border-radius: 5px;
       border: none;
+      font-family: inherit;
+      background-color: #f3f9fa;
+      border-radius: 5px;
+      width: 100%;
       text-align: right;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #00474b;
+      padding: 0.6rem 1.7rem;
+      outline: none;
     }
   }
 }
@@ -127,4 +152,64 @@
   border-radius: 15px;
   margin: 3.2rem 3.2rem 3.2rem 4.8rem;
   width: 50%;
+
+  &__tip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 4rem 2.5rem 4rem;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    &-title {
+      margin-top: 1.6rem;
+    }
+  }
+
+  &__tip-title,
+  &__total-title {
+    font-family: inherit;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #7f9d9f;
+      line-height: 1.9rem;
+    }
+  }
+
+  &__tip-amount,
+  &__total-amount {
+    font-family: inherit;
+    font-size: 4.8rem;
+    line-height: 7.1rem;
+    text-align: right;
+    letter-spacing: -1px;
+    color: #26c2ae;
+    font-weight: 700;
+  }
+
+  &__reset,
+  &__reset:link,
+  &__reset:visited {
+    margin: 12.2rem 4rem 4rem 4rem;
+    padding: 0.9rem 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #0d686d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #00474b;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }

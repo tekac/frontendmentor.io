@@ -79,8 +79,13 @@ body {
   margin-right: 1.4rem;
 }
 
-.btn:focus:not(.btn-custom) {
+.btn:hover:not(.btn-custom) {
   background-color: #9fe8df;
+  color: #00474b;
+}
+
+.btn:focus:not(.btn-custom) {
+  background-color: #26c2ae;
   color: #00474b;
 }
 
@@ -91,7 +96,7 @@ body {
   outline: none;
 }
 
-.btn-custom:focus {
+.btn-custom:focus, .btn-custom:hover {
   outline-width: 2px;
   outline-style: solid;
   outline-color: #26c2ae;
@@ -142,7 +147,7 @@ body {
   outline: none;
 }
 
-.card__left__bill-input:focus {
+.card__left__bill-input:focus, .card__left__bill-input:hover {
   outline-width: 2px;
   outline-style: solid;
   outline-color: #26c2ae;
@@ -191,17 +196,35 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .card__left__people-label {
   margin-bottom: 0.6rem;
   color: #5e7a7d;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.card__left__people-pericon {
+  position: absolute;
+  margin-left: 1.7rem;
+  top: 4rem;
 }
 
 .card__left__people-input {
-  border-radius: 5px;
   border: none;
+  font-family: inherit;
+  background-color: #f3f9fa;
+  border-radius: 5px;
+  width: 100%;
   text-align: right;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #00474b;
+  padding: 0.6rem 1.7rem;
+  outline: none;
 }
 
 .card__right {
@@ -209,5 +232,71 @@ body {
   border-radius: 15px;
   margin: 3.2rem 3.2rem 3.2rem 4.8rem;
   width: 50%;
+}
+
+.card__right__tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 4rem 2.5rem 4rem;
+}
+
+.card__right__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.card__right__total-title {
+  margin-top: 1.6rem;
+}
+
+.card__right__tip-title, .card__right__total-title {
+  font-family: inherit;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+.card__right__tip-title p, .card__right__total-title p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7f9d9f;
+  line-height: 1.9rem;
+}
+
+.card__right__tip-amount, .card__right__total-amount {
+  font-family: inherit;
+  font-size: 4.8rem;
+  line-height: 7.1rem;
+  text-align: right;
+  letter-spacing: -1px;
+  color: #26c2ae;
+  font-weight: 700;
+}
+
+.card__right__reset, .card__right__reset:link, .card__right__reset:visited {
+  margin: 12.2rem 4rem 4rem 4rem;
+  padding: 0.9rem 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0d686d;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #00474b;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
