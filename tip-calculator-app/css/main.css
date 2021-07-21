@@ -182,6 +182,28 @@ body {
   font-weight: 700;
 }
 
+.card__left__people {
+  margin: 4rem 4.8rem 4.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__left__people-label {
+  margin-bottom: 0.6rem;
+  color: #5e7a7d;
+}
+
+.card__left__people-input {
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+}
+
 .card__right {
   background-color: var(--color-cyan-dark);
   border-radius: 15px;

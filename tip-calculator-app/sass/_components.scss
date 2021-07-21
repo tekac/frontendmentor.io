@@ -103,6 +103,23 @@
       font-weight: 700;
     }
   }
+
+  &__people {
+    margin: 4rem 4.8rem 4.8rem;
+    display: flex;
+    flex-direction: column;
+
+    &-label {
+      margin-bottom: 0.6rem;
+      color: #5e7a7d;
+    }
+
+    &-input {
+      border-radius: 5px;
+      border: none;
+      text-align: right;
+    }
+  }
 }
 
 .card__right {
