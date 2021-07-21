@@ -198,18 +198,28 @@
     font-weight: 700;
   }
 
-  &__reset,
-  &__reset:link,
-  &__reset:visited {
+  &__reset {
     margin: 12.2rem 4rem 4rem 4rem;
     padding: 0.9rem 4rem;
     text-align: center;
     text-transform: uppercase;
     background-color: #0d686d;
     border-radius: 5px;
-    text-decoration: none;
     color: #00474b;
     font-size: 2rem;
     line-height: 3rem;
+    font-weight: 700;
+    font-family: inherit;
+
+    &:hover {
+      background-color: #9fe8df;
+      color: #00474b;
+    }
+
+    &-btn:link,
+    &-btn:visited {
+      text-decoration: none;
+      color: #00474b;
+    }
   }
 }

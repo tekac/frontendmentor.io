@@ -287,16 +287,27 @@ body {
   font-weight: 700;
 }
 
-.card__right__reset, .card__right__reset:link, .card__right__reset:visited {
+.card__right__reset {
   margin: 12.2rem 4rem 4rem 4rem;
   padding: 0.9rem 4rem;
   text-align: center;
   text-transform: uppercase;
   background-color: #0d686d;
   border-radius: 5px;
-  text-decoration: none;
   color: #00474b;
   font-size: 2rem;
   line-height: 3rem;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.card__right__reset:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+
+.card__right__reset-btn:link, .card__right__reset-btn:visited {
+  text-decoration: none;
+  color: #00474b;
 }
 /*# sourceMappingURL=main.css.map */
