@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
 :root {
   --color-primary: hsl(172, 67%, 45%);
 
@@ -30,4 +32,9 @@ body {
   font-weight: 400;
   background-color: var(--color-cyan-light-1);
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

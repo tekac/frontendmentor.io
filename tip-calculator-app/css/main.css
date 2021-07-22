@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 :root {
   --color-primary: hsl(172, 67%, 45%);
   --color-cyan-dark: hsl(183, 100%, 15%);
@@ -31,34 +32,49 @@ body {
   font-weight: 400;
   background-color: var(--color-cyan-light-1);
   position: relative;
-}
-
-.header {
-  margin-top: 16.3rem;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
   margin-top: 8.8rem;
+  margin-bottom: 23.9rem;
   background-color: var(--color-white);
   border-radius: 25px;
   -webkit-box-shadow: 0 3.2rem 4.3rem rgba(79, 166, 175, 0.2);
           box-shadow: 0 3.2rem 4.3rem rgba(79, 166, 175, 0.2);
   width: 920px;
   height: 481px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -129,7 +145,7 @@ body {
 .card__left__bill-dollar {
   margin-left: 1.9rem;
   position: absolute;
-  top: 4rem;
+  top: 4.7rem;
   left: 0;
 }
 
@@ -210,7 +226,7 @@ body {
 .card__left__people-pericon {
   position: absolute;
   margin-left: 1.7rem;
-  top: 4rem;
+  top: 4.7rem;
 }
 
 .card__left__people-input {
@@ -225,6 +241,12 @@ body {
   color: #00474b;
   padding: 0.6rem 1.7rem;
   outline: none;
+}
+
+.card__left__people-input:focus {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #26c2ae;
 }
 
 .card__right {
@@ -254,12 +276,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 4rem;
   margin-right: 4rem;
-}
-
-.card__right__total-title {
-  margin-top: 1.6rem;
 }
 
 .card__right__tip-title, .card__right__total-title {
