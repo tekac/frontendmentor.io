@@ -33,22 +33,18 @@ for (const button of buttons) {
       tip = ((billInput.value * 0.05) / numPeople.value).toFixed(2);
       tipDisplay.textContent = `$${tip}`;
 
-      // total = parseFloat((billInput.value + tip) / numPeople.value).toFixed(2);
-      // totalDisplay.textContent = `$${total}`;
-    }
-    if (button.value === "10%") {
+      total = parseFloat((billInput.value + tip) / numPeople.value).toFixed(2);
+      totalDisplay.textContent = `$${total}`;
+    } else if (button.value === "10%") {
       tip = ((billInput.value * 0.1) / numPeople.value).toFixed(2);
       tipDisplay.textContent = `$${tip}`;
-    }
-    if (button.value === "15%") {
+    } else if (button.value === "15%") {
       tip = ((billInput.value * 0.15) / numPeople.value).toFixed(2);
       tipDisplay.textContent = `$${tip}`;
-    }
-    if (button.value === "25%") {
+    } else if (button.value === "25%") {
       tip = ((billInput.value * 0.25) / numPeople.value).toFixed(2);
       tipDisplay.textContent = `$${tip}`;
-    }
-    if (button.value === "50%") {
+    } else if (button.value === "50%") {
       tip = ((billInput.value * 0.5) / numPeople.value).toFixed(2);
       tipDisplay.textContent = `$${tip}`;
     }
