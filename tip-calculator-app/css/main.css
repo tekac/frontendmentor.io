@@ -328,6 +328,7 @@ footer {
 }
 
 .card__right__reset-btn:link, .card__right__reset-btn:visited {
+  display: block;
   text-decoration: none;
   color: #00474b;
 }
