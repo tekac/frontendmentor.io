@@ -107,7 +107,7 @@ footer {
 
 .btn-custom {
   background-color: #f3f9fa;
-  color: #547878;
+  color: #00474b;
   text-align: right;
   outline: none;
 }
@@ -221,6 +221,21 @@ footer {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__left__people-label .ppl-label {
+  visibility: hidden;
+}
+
+.card__left__people-label .ppl-label-req {
+  color: #e17457;
+  visibility: visible;
 }
 
 .card__left__people-pericon {
@@ -331,5 +346,11 @@ footer {
   display: block;
   text-decoration: none;
   color: #00474b;
+}
+
+.ppl-req {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #e17052;
 }
 /*# sourceMappingURL=main.css.map */

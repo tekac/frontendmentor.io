@@ -28,7 +28,7 @@
 
 .btn-custom {
   background-color: #f3f9fa;
-  color: #547878;
+  color: #00474b;
   text-align: right;
   outline: none;
 
@@ -123,6 +123,17 @@
       font-weight: 700;
       font-size: 1.6rem;
       line-height: 2.4rem;
+      display: flex;
+      justify-content: space-between;
+
+      .ppl-label {
+        visibility: hidden;
+      }
+
+      .ppl-label-req {
+        color: #e17457;
+        visibility: visible;
+      }
     }
 
     &-pericon {
@@ -226,4 +237,10 @@
       color: #00474b;
     }
   }
+}
+
+.ppl-req {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #e17052;
 }

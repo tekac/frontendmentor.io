@@ -50,12 +50,20 @@
           <div class="card__left__row">
             <input class="btn" type="button" value="25%" />
             <input class="btn" type="button" value="50%" />
-            <input class="btn btn-custom" type="text" placeholder="Custom" />
+            <input
+              class="btn btn-custom"
+              type="text"
+              inputmode="numeric"
+              value="custom"
+              placeholder="Custom"
+              maxlength="3"
+            />
           </div>
         </div>
         <div class="card__left__people">
           <label class="card__left__people-label" for="num-ppl"
-            >Number of People</label
+            >Number of People
+            <span class="ppl-label ppl-label-req">Can't be zero</span></label
           >
           <img
             class="card__left__people-pericon"
@@ -63,7 +71,7 @@
             alt="person icon"
           />
           <input
-            class="card__left__people-input"
+            class="card__left__people-input ppl-req"
             type="text"
             required
             name="num-ppl"
