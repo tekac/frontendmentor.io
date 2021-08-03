@@ -26,29 +26,40 @@ const reset = function () {
 reset();
 
 // CALCULATION LOGIC
+//!! IF A BUTTON IS SELECTED AND NUM-PPL IS EMPTY - MAKE REQUIRED!
 
 for (const button of buttons) {
   button.addEventListener("click", () => {
-    if (button.value === "5%") {
-      tip = ((billInput.value * 0.05) / numPeople.value).toFixed(2);
-      tipDisplay.textContent = `$${tip}`;
-
-      total = parseFloat((billInput.value + tip) / numPeople.value).toFixed(2);
-      totalDisplay.textContent = `$${total}`;
-    } else if (button.value === "10%") {
-      tip = ((billInput.value * 0.1) / numPeople.value).toFixed(2);
-      tipDisplay.textContent = `$${tip}`;
-    } else if (button.value === "15%") {
-      tip = ((billInput.value * 0.15) / numPeople.value).toFixed(2);
-      tipDisplay.textContent = `$${tip}`;
-    } else if (button.value === "25%") {
-      tip = ((billInput.value * 0.25) / numPeople.value).toFixed(2);
-      tipDisplay.textContent = `$${tip}`;
-    } else if (button.value === "50%") {
-      tip = ((billInput.value * 0.5) / numPeople.value).toFixed(2);
-      tipDisplay.textContent = `$${tip}`;
+    if (numPeople.value != "") {
+      switch (button.value) {
+        case "5%":
+          billCalc(0.05);
+          break;
+        case "10%":
+          billCalc(0.1);
+          break;
+        case "15%":
+          billCalc(0.15);
+          break;
+        case "25%":
+          billCalc(0.25);
+          break;
+        case "50%":
+          billCalc(0.5);
+          break;
+      }
+    } else {
+      // code here to require num-ppl input
     }
   });
+}
+
+function billCalc(tip) {
+  tip = ((billInput.value * tip) / numPeople.value).toFixed(2);
+  tipDisplay.textContent = `$${tip}`;
+
+  total = (parseFloat(billInput.value) + parseFloat(tip)) / numPeople.value;
+  totalDisplay.textContent = `$${total.toFixed(2)}`;
 }
 
 btnReset.addEventListener("click", reset);
