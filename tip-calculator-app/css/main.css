@@ -78,11 +78,17 @@ footer {
 }
 
 @media (max-width: 960px) {
+  html,
+  body {
+    min-height: 100%;
+  }
+  .header__logo {
+    margin: 5rem auto 4rem;
+  }
   .container {
     width: 375px;
     height: 789px;
-    margin-top: 14.4rem;
-    margin-bottom: 0;
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -93,12 +99,41 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .container .card__left {
     width: 100%;
   }
+  .container .card__left__bill {
+    margin: 3.2rem;
+  }
+  .container .card__left__tip {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+  .container .card__left__people {
+    margin: 3.2rem;
+  }
   .container .card__right {
-    width: 100%;
+    width: 327px;
+    height: 257px;
+    margin: 2.4rem 3.2rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .container .card__right__tip {
+    margin: 3.7rem 2.2rem 2rem 2.4rem;
+  }
+  .container .card__right__total {
+    margin: 0 2.2rem 3.2rem 2.4rem;
+  }
+  .container .card__right__reset {
+    margin: 3.2rem 2.4rem;
+  }
+  .attribution {
+    visibility: hidden;
   }
 }
 

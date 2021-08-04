@@ -33,22 +33,63 @@ footer {
 // MEDIA QUERIES //
 
 @media (max-width: 960px) {
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  .header__logo {
+    margin: 5rem auto 4rem;
+  }
+
   .container {
     width: 375px;
     height: 789px;
-    margin-top: 14.4rem;
-    margin-bottom: 0;
+    margin: 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
     .card__left {
       width: 100%;
+
+      &__bill {
+        margin: 3.2rem;
+      }
+
+      &__tip {
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+      }
+
+      &__people {
+        margin: 3.2rem;
+      }
     }
 
     .card__right {
-      width: 100%;
+      width: 327px;
+      height: 257px;
+      margin: 2.4rem 3.2rem;
+      flex: 1;
+
+      &__tip {
+        margin: 3.7rem 2.2rem 2rem 2.4rem;
+      }
+
+      &__total {
+        margin: 0 2.2rem 3.2rem 2.4rem;
+      }
+
+      &__reset {
+        margin: 3.2rem 2.4rem;
+      }
     }
+  }
+  .attribution {
+    visibility: hidden;
   }
 }
