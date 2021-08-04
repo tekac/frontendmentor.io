@@ -149,6 +149,9 @@ footer {
   font-family: inherit;
   font-weight: 700;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .btn:not(:last-child) {

@@ -11,6 +11,10 @@
   font-weight: 700;
   cursor: pointer;
 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   &:not(:last-child) {
     margin-right: 1.4rem;
   }
