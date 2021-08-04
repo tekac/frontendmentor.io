@@ -39,8 +39,16 @@ function charValid(e) {
   }
 }
 
+function noPeople(e) {
+  if (numPeople.value == "" || numPeople.value == 0) {
+    e.preventDefault();
+    return false;
+  }
+}
+
 billInput.addEventListener("keydown", charValid);
 btnCustom.addEventListener("keydown", charValid);
+btnCustom.addEventListener("keydown", noPeople);
 numPeople.addEventListener("keydown", charValid);
 
 // CALCULATION LOGIC
@@ -72,6 +80,8 @@ for (const button of buttons) {
       numPeople.classList.add("ppl-req");
       pplSpan.classList.add("ppl-label-req");
     }
+
+    //TODO: IF THERE IS NO BILL INPUT VALUE .... PREVENT CALCULATION , THROW NEW TXT CONTENT W/ WARNING??
 
     btnCustom.addEventListener("input", function () {
       cstTip =
