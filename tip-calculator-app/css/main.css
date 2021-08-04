@@ -77,6 +77,31 @@ footer {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 960px) {
+  .container {
+    width: 375px;
+    height: 789px;
+    margin-top: 14.4rem;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .card__left {
+    width: 100%;
+  }
+  .container .card__right {
+    width: 100%;
+  }
+}
+
 .btn {
   background-color: var(--color-cyan-dark);
   border: none;
@@ -85,7 +110,7 @@ footer {
   color: var(--color-white);
   padding: 0.6rem 1.4rem;
   text-align: center;
-  width: 11.7rem;
+  width: 10.7rem;
   font-family: inherit;
   font-weight: 700;
   cursor: pointer;
@@ -110,6 +135,7 @@ footer {
   color: #00474b;
   text-align: right;
   outline: none;
+  font-size: 2.2rem;
 }
 
 .btn-custom:focus, .btn-custom:hover {
