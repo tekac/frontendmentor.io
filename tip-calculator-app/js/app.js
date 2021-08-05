@@ -95,7 +95,9 @@ function billCalc(tip) {
   tip = ((billInput.value * tip) / numPeople.value).toFixed(2);
   tipDisplay.textContent = `$${tip}`;
 
-  total = (parseFloat(billInput.value) + parseFloat(tip)) / numPeople.value;
+  total =
+    (parseFloat(billInput.value) + parseFloat(tip) * numPeople.value) /
+    numPeople.value;
   totalDisplay.textContent = `$${total.toFixed(2)}`;
 }
 
