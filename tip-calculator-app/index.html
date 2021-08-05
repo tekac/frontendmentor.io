@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A challenge from frontendmentor.io for a tip calculator that utilizes javascript with design from css and html."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
@@ -12,16 +16,34 @@
       href="assets/images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.onload=null;this.removeAttribute('media');"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+    />
     <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
+    <!====== HEADER ======!>
+
     <header class="header">
-      <img class="header__logo" src="/assets/images/logo.svg" alt="logo" />
+      <img
+        class="header__logo"
+        src="/assets/images/logo.svg"
+        height="54"
+        width="87"
+        alt="logo"
+      />
     </header>
 
     <main class="container">
+      <!====== LEFT_CARD ======!>
+
       <div class="card__left">
         <div class="card__left__bill">
           <label class="card__left__bill-label" for="bill">Bill</label>
@@ -81,6 +103,9 @@
           />
         </div>
       </div>
+
+      <!====== RIGHT_CARD ======!>
+
       <div class="card__right">
         <div class="card__right__tip">
           <h3 class="card__right__tip-title">
@@ -102,10 +127,15 @@
       </div>
     </main>
 
+    <!====== FOOTER ======!>
+
     <footer>
       <div class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener"
           >Frontend Mentor</a
         >. Coded by
         <a

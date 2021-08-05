@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 :root {
   --color-primary: hsl(172, 67%, 45%);
   --color-cyan-dark: hsl(183, 100%, 15%);
   --color-cyan-dark-1: hsl(186, 14%, 43%);
-  --color-cyan-dark-2: hsl(184, 14%, 56%);
+  --color-cyan-dark-2: hsl(184, 20%, 64%, 1);
   --color-cyan-light-1: hsl(185, 41%, 84%);
   --color-cyan-light-2: hsl(189, 41%, 97%);
   --color-white: hsl(0, 0%, 100%);
@@ -377,9 +376,9 @@ footer {
 }
 
 .card__right__tip-title p, .card__right__total-title p {
+  color: var(--color-cyan-dark-2);
   font-size: 1.3rem;
   font-weight: 700;
-  color: #7f9d9f;
   line-height: 1.9rem;
 }
 
