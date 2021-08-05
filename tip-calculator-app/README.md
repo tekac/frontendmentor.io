@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](/assets/images/screenshot)
+![](screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/tekac/frontendmentor.io/tree/main/tip-calculator-app)
-- Live Site URL: [Add live site URL here](https://lucid-elion-1e2077.netlify.app/)
+- Solution URL: [Github](https://github.com/tekac/frontendmentor.io/tree/main/tip-calculator-app)
+- Live Site URL: [Live-Preview](https://lucid-elion-1e2077.netlify.app/)
 
 ## My process
 
@@ -45,43 +45,33 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned a better process on organizing HTML and the SCSS. The Javascript was a little tricky at first as I had not practiced it in awhile because I was trying to get better at HTML/CSS. I pulled through and I believe I came up with a great solution. This overall was a great learning experience. I learned a ton with it all.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Amongst my favorites were learning about char validation to prevent people from entering letter's and causing problems in the calculator. I also practiced with SCSS nesting and utilizing :not for the buttons.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+&:not(:last-child) {
+  margin-right: 1.4rem;
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+function charValid(e) {
+  if (e.keyCode >= 65 && e.keyCode <= 90) {
+    e.preventDefault();
+    return false;
+  }
+}
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'm going to do more refactoring with this project to finalize its code organization. I've already done some refactoring and its been a good experience. I'd like to try mobile-first development with some future projects.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Stack Overflow](https://stackoverflow.com/) - Stack Overflow is just an immense resource. Usually will have answers for any questions you have about a topic, even if you don't exactly know what you're asking.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/tekac)
+- Frontend Mentor - [@tekac](https://www.frontendmentor.io/profile/tekac)
