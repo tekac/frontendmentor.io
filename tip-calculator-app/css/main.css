@@ -1,5 +1,7 @@
 :root {
   --color-primary: hsl(172, 67%, 45%);
+  --color-accent: hsl(173, 61%, 77%);
+  --color-error: #e17457;
   --color-cyan-dark: hsl(183, 100%, 15%);
   --color-cyan-dark-1: hsl(186, 14%, 43%);
   --color-cyan-dark-2: hsl(184, 20%, 64%, 1);
@@ -164,18 +166,18 @@ footer {
 }
 
 .btn:hover:not(.btn-custom) {
-  background-color: #9fe8df;
-  color: #00474b;
+  background-color: var(--color-cyan-light-1);
+  color: var(--color-cyan-dark);
 }
 
 .btn:focus:not(.btn-custom) {
-  background-color: #26c2ae;
-  color: #00474b;
+  background-color: var(--color-primary);
+  color: var(--color-cyan-dark);
 }
 
 .btn-custom {
-  background-color: #f3f9fa;
-  color: #00474b;
+  background-color: var(--color-cyan-light-2);
+  color: var(--color-cyan-dark);
   text-align: right;
   outline: none;
   font-size: 2.2rem;
@@ -184,7 +186,7 @@ footer {
 .btn-custom:focus, .btn-custom:hover {
   outline-width: 2px;
   outline-style: solid;
-  outline-color: #26c2ae;
+  outline-color: var(--color-primary);
 }
 
 .card__left {
@@ -207,7 +209,7 @@ footer {
   margin-bottom: 0.6rem;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  color: #5e7a7d;
+  color: var(--color-cyan-dark-1);
   font-weight: 700;
 }
 
@@ -221,13 +223,13 @@ footer {
 .card__left__bill-input {
   border: none;
   font-family: inherit;
-  background-color: #f3f9fa;
+  background-color: var(--color-cyan-light-2);
   border-radius: 5px;
   width: 100%;
   text-align: right;
   font-weight: 700;
   font-size: 2.4rem;
-  color: #00474b;
+  color: var(--color-cyan-dark);
   padding: 0.6rem 1.7rem;
   outline: none;
 }
@@ -235,7 +237,7 @@ footer {
 .card__left__bill-input:focus, .card__left__bill-input:hover {
   outline-width: 2px;
   outline-style: solid;
-  outline-color: #26c2ae;
+  outline-color: var(--color-primary);
 }
 
 .card__left__row {
@@ -268,7 +270,7 @@ footer {
   margin-bottom: 1.6rem;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  color: #5e7a7d;
+  color: var(--color-cyan-dark-1);
   font-weight: 700;
 }
 
@@ -286,7 +288,7 @@ footer {
 
 .card__left__people-label {
   margin-bottom: 0.6rem;
-  color: #5e7a7d;
+  color: var(--color-cyan-dark-1);
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -303,7 +305,7 @@ footer {
 }
 
 .card__left__people-label .ppl-label-req {
-  color: #e17457;
+  color: var(--color-error);
   visibility: visible;
 }
 
@@ -316,13 +318,13 @@ footer {
 .card__left__people-input {
   border: none;
   font-family: inherit;
-  background-color: #f3f9fa;
+  background-color: var(--color-cyan-light-2);
   border-radius: 5px;
   width: 100%;
   text-align: right;
   font-weight: 700;
   font-size: 2.4rem;
-  color: #00474b;
+  color: var(--color-cyan-dark);
   padding: 0.6rem 1.7rem;
   outline: none;
 }
@@ -330,7 +332,7 @@ footer {
 .card__left__people-input:focus {
   outline-width: 2px;
   outline-style: solid;
-  outline-color: #26c2ae;
+  outline-color: var(--color-primary);
 }
 
 .card__right {
@@ -388,7 +390,7 @@ footer {
   line-height: 7.1rem;
   text-align: right;
   letter-spacing: -1px;
-  color: #26c2ae;
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -399,7 +401,7 @@ footer {
   text-transform: uppercase;
   background-color: #0d686d;
   border-radius: 5px;
-  color: #00474b;
+  color: var(--color-cyan-dark);
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 700;
@@ -407,14 +409,14 @@ footer {
 }
 
 .card__right__reset:hover {
-  background-color: #9fe8df;
-  color: #00474b;
+  background-color: var(--color-cyan-light-1);
+  color: var(--color-cyan-dark);
 }
 
 .card__right__reset-btn:link, .card__right__reset-btn:visited {
   display: block;
   text-decoration: none;
-  color: #00474b;
+  color: var(--color-cyan-dark);
 }
 
 .ppl-req {

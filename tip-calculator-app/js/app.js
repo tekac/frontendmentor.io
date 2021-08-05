@@ -81,8 +81,6 @@ for (const button of buttons) {
       pplSpan.classList.add("ppl-label-req");
     }
 
-    //TODO: IF THERE IS NO BILL INPUT VALUE .... PREVENT CALCULATION , THROW NEW TXT CONTENT W/ WARNING??
-
     btnCustom.addEventListener("input", function () {
       cstTip =
         btnCustom.value < 10
