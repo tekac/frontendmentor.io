@@ -146,7 +146,8 @@ body {
   font-weight: 900;
 }
 
-.card_btn:active {
+.card_btn:active,
+.card_btn:hover {
   background-color: var(--primary-button);
 }
 
@@ -160,7 +161,8 @@ body {
   text-decoration: none;
 }
 
-.card_btn-cancel:active {
+.card_btn-cancel:active,
+.card_btn-cancel:hover {
   color: var(--neutral-dark);
 }
 
