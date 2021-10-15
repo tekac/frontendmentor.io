@@ -166,11 +166,6 @@ body {
   color: var(--neutral-dark);
 }
 
-.attribution {
-  position: absolute;
-  bottom: 2rem;
-}
-
 /***** MEDIA QUERIES *****/
 
 @media (max-width: 48rem) {
