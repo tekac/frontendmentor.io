@@ -144,11 +144,16 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 900;
+  transform: 0.2s all;
 }
 
 .card_btn:active,
 .card_btn:hover {
   background-color: var(--primary-button);
+}
+
+.card_btn:active {
+  transform: scale(0.98);
 }
 
 .card_btn-cancel {
