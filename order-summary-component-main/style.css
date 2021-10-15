@@ -122,7 +122,8 @@ body {
   line-height: 1.9rem;
 }
 
-.card_plan-link:active {
+.card_plan-link:active,
+.card_plan-link:hover {
   color: var(--primary-button);
   text-decoration: none;
 }
