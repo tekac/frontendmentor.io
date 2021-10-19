@@ -1,6 +1,15 @@
 :root {
   /* Light Mode */
-  --light-blue: ;
+  #0079FF;
+  #697C9A;
+  #4B6A9B;
+  #2B3442;
+  #F6F8FF;
+  #FEFEFE;
+
+  /* Dark Mode */
+  #FFFFFF
+  hsl(220, 40%, 13%)
 }
 
 *,
@@ -17,6 +26,9 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   line-height: 2.5rem;
