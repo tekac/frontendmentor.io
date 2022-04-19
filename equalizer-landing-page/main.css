@@ -68,6 +68,10 @@ header p {
   line-height: var(--fh-b1);
 }
 
+span {
+  vertical-align: middle;
+}
+
 .logo {
   margin-bottom: 127px;
 }
@@ -92,16 +96,20 @@ header p {
   background-color: var(--color-secondary);
   margin-top: 321px;
   height: 600px;
+  position: relative;
+  min-width: 1110px;
 
   display: flex;
   justify-content: center;
-  position: relative;
-  min-width: 1110px;
+  z-index: 1;
 }
 
 .content-img {
   height: 468px;
-  margin-right: 8rem;
+  position: relative;
+  z-index: 1;
+  top: -40px;
+  right: 4rem;
 }
 
 .phone-app {
@@ -110,6 +118,7 @@ header p {
   width: 312px;
   left: 102px;
   top: -205px;
+  z-index: 2;
 }
 
 .card-container {
@@ -118,6 +127,10 @@ header p {
   width: 446px;
   height: 625px;
   padding: 58px 59px 48px 54px;
+  position: absolute;
+  top: 90px;
+  right: 95px;
+  z-index: 2;
 
   display: flex;
   flex-direction: column;
@@ -147,6 +160,11 @@ header p {
   padding: 0.7rem;
   border: none;
   color: var(--color-primary);
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .btn-container {
@@ -157,4 +175,23 @@ header p {
 
 .ios {
   background-color: var(--color-secondary);
+}
+
+.android {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.ios img,
+.android img {
+  margin-right: 0.2rem;
+  vertical-align: -12%;
+}
+
+/*--- FOOTER SECTION ---*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
