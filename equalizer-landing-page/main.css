@@ -27,6 +27,8 @@ body {
   font-weight: var(--fw-reg);
   overflow-x: hidden;
   min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
 
   background-color: var(--color-primary);
   background-image: url(/assets/bg-main-desktop.png);
@@ -191,7 +193,15 @@ span {
 /*--- FOOTER SECTION ---*/
 
 footer {
+  margin-top: 202px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
