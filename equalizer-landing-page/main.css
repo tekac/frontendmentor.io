@@ -167,6 +167,7 @@ span {
   letter-spacing: -0.18px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .btn-container {
@@ -179,9 +180,18 @@ span {
   background-color: var(--color-secondary);
 }
 
+.ios:active {
+  background-color: var(--btn-ios-active);
+  transform: scale(0.1rem);
+}
+
 .android {
   color: var(--color-secondary);
   background-color: var(--color-primary);
+}
+
+.android:active {
+  background-color: var(--btn-android-active);
 }
 
 .ios img,
@@ -204,4 +214,14 @@ footer {
   display: flex;
   list-style: none;
   gap: 20px;
+}
+
+.footer-links li a:active {
+  color: var(--btn-android-active);
+}
+
+.footer-text-container p:nth-child(3) a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: 700;
 }
