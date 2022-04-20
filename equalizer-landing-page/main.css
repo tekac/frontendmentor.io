@@ -180,9 +180,8 @@ span {
   background-color: var(--color-secondary);
 }
 
-.ios:active {
+.ios:hover {
   background-color: var(--btn-ios-active);
-  transform: scale(0.1rem);
 }
 
 .android {
@@ -190,8 +189,13 @@ span {
   background-color: var(--color-primary);
 }
 
-.android:active {
+.android:hover {
   background-color: var(--btn-android-active);
+}
+
+.ios:active,
+.android:active {
+  transform: scale(0.9);
 }
 
 .ios img,
@@ -216,8 +220,9 @@ footer {
   gap: 20px;
 }
 
-.footer-links li a:active {
-  color: var(--btn-android-active);
+.footer-links li a:hover {
+  filter: invert(57%) sepia(41%) saturate(2574%) hue-rotate(328deg)
+    brightness(104%) contrast(96%);
 }
 
 .footer-text-container p:nth-child(3) a {
