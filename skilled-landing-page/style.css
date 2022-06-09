@@ -16,6 +16,15 @@
   --fw-med: 500;
   --fw-bold: 700;
   --fw-xbold: 800;
+
+  --color-primary: rgb(19, 24, 63);
+  --color-secondary: rgb(131, 134, 154);
+  --color-tertiary: rgb(247, 71, 128);
+  --color-white: rgb(255, 255, 255);
+  --gradient-primary: rgb(240, 42, 166), rgb(255, 111, 72);
+  --gradient-secondary: rgb(72, 81, 255), rgb(240, 42, 166);
+  --btn-one: rgb(102, 108, 163);
+  --btn-two: rgb(255, 167, 195);
 }
 
 *,
@@ -30,4 +39,51 @@ body {
   min-height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 1.75rem;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* BUTTON MODULES */
+
+.btn {
+  color: var(--color-white);
+  font-weight: var(--fw-bold);
+  font-size: var(--body-s);
+  line-height: var(--lh-s);
+  padding: 9px 24px 11px;
+  border-radius: 28px;
+}
+
+.btn-nav {
+  background-color: var(--color-primary);
+}
+
+.btn-hero {
+  background: linear-gradient(var(--gradient-primary));
+}
+
+/* HEADER SECTION */
+
+header {
+  margin-bottom: 2.375rem;
+}
+
+h1 {
+  font-size: var(--heading-l);
+  line-height: var(--lh-l);
+  font-weight: var(--fw-xbold);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 35px;
+  width: 89px;
 }
