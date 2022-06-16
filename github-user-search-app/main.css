@@ -71,9 +71,67 @@ h4 {
   font-weight: var(--fw-reg);
 }
 
+a {
+  text-decoration: none;
+}
+
 .search_box,
 .card_container {
   background-color: #fefefe;
   box-sizing: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 1.5rem;
+}
+
+nav {
+  display: flex;
+  min-width: 32.7rem;
+}
+
+nav h1 {
+  flex: 1;
+}
+
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.25rem;
+}
+
+.nav_right a {
+  margin-top: 0.7rem;
+}
+
+.search_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  background-image: url(/assets/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: center;
+  background-size: 20px;
+}
+
+.search_box input {
+  margin-left: 4.5rem;
+  outline: none;
+  border: none;
+  width: 80%;
+  padding: 1.8rem 0.7rem 1.7rem;
+}
+
+.search_box-btn {
+  color: #fff;
+  background: var(--btn-primary);
+  font-size: var(--text-h4);
+  line-height: var(--txt-h4-lh);
+  font-weight: var(--fw-bold);
+  border-radius: 1rem;
+  padding: 1.2rem 1.8rem;
 }
