@@ -3,7 +3,7 @@
     "tailwindcss": "^3.1.8"
   },
   "scripts": {
-    "watch": "tailwind -i ./input-css -o ./css/main.css --watch",
-    "build": "tailwind -i ./input-css -o ./css/main.css"
+    "watch": "tailwind -i ./input.css -o ./css/main.css --watch",
+    "build": "tailwind -i ./input.css -o ./css/main.css"
   }
 }
