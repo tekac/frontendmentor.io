@@ -12,6 +12,9 @@ module.exports = {
       tertiary: "hsla(0,0%,100%,.6)",
     },
     extend: {
+      screens: {
+        "8xl": { max: "90rem" },
+      },
       fontFamily: {
         inter: ["inter", "sans-serif"],
         lexend: ["lexend Deca", "sans-serif"],
