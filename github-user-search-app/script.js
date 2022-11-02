@@ -1,4 +1,4 @@
-import { Octokit } from "/node_modules@octokit/rest";
+import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
 
 const octokit = new Octokit({
   auth: "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",
