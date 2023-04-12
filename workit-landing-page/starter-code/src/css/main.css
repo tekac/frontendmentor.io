@@ -25,9 +25,9 @@
   --heading-m: 5.6rem;
   --heading-s: 3.2rem;
 
-  --heading-l-ls: 8rem;
-  --heading-m-ls: 6.4rem;
-  --heading-s-ls: 4rem;
+  --heading-l-ls: 1rem;
+  --heading-m-ls: 1.14rem;
+  --heading-s-ls: 1.25rem;
 }
 
 html {
@@ -37,4 +37,23 @@ html {
 body {
   font-family: Manrope, sans-serif;
   font-size: 1.8rem;
+  line-height: 1.778;
+}
+
+header {
+  color: var(--white)
+  display: grid;
+  place-items: center;
+}
+
+.bg-image-left,.bg-image-right {
+  display: none;
+}
+
+.background-top {
+  position: relative;
+  z-index: 0;
+  background: var(--main-bg);
+  clip-path: ellipse(200% 85% at 50% 0);
+  padding-bottom: 7.1rem;
 }
